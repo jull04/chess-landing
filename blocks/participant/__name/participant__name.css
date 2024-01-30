@@ -1,0 +1,10 @@
+.participant__name {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.8px;
+  margin: 25px auto 6px;
+  text-align: center;
+}

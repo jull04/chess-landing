@@ -1,0 +1,21 @@
+.stages__grid-table {
+  margin: 54px 0 0;
+  display: grid;
+  grid-template-columns: 394px 394px 394px;
+  grid-template-rows: 112px 112px 136px;
+  gap: 20px 20px;
+  grid-template-areas:
+  ". . a"
+  ". . a"
+  ". b b";
+  position: relative;
+}
+
+.b { grid-area: b; }
+.a { grid-area: a; }
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .stages__grid-table {
+    display: none;
+  }
+}

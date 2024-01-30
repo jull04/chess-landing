@@ -1,0 +1,10 @@
+.stages__grid-number {
+  border-radius: 60px;
+  background: #FFF;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

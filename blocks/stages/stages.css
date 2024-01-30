@@ -1,0 +1,9 @@
+.stages {
+  margin: 170px 72px 200px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .stages {
+    margin: 0 20px 20px;
+  }
+}

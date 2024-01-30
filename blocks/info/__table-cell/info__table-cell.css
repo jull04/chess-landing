@@ -1,0 +1,33 @@
+.info__table-cell {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 290px;
+  padding: 16px 16px 16px 0;
+  margin: 0;
+  opacity: 0.7;
+  border: 1px solid #D0D0D0;
+  border-left: none;
+}
+
+.info__table-cell-first {
+  border-top: none;
+  padding-top: 0;
+}
+
+.info__table-cell-last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .info__table-cell {
+    display: inline-block;
+    border: none;
+    width: 335px;
+    padding: 16px 0 12px;
+  }
+}

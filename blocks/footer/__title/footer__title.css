@@ -1,0 +1,20 @@
+.footer__title {
+  padding: 40px 72px 72px 72px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  opacity: 0.6;
+  margin: 0;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .footer__title  {
+    width: 335px;
+    padding: 40px 20px 60px;
+  }
+}

@@ -1,0 +1,22 @@
+.participant__about {
+  all: unset;
+  color: #3057A2;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  border-radius: 62px;
+  border: 1px solid #3057A2;
+  cursor: pointer;
+  width: 113px;
+  height: 35px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.participant__about:hover {
+  background: #3057A2;
+  color: #FFFFFF;
+}

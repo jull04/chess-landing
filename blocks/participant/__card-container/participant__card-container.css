@@ -1,0 +1,10 @@
+.participant__card-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .participant__card-container {
+    width: 335px;
+  }
+}

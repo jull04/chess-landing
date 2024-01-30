@@ -1,0 +1,21 @@
+.header__button-white {
+  background: transparent;
+  border: 2px solid #1F1F1F;
+  color: #1F1F1F;
+  margin-left: 16px;
+}
+
+.header__button-white:hover {
+  background: #1F1F1F;
+  color: #FFFFFF;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header__button-white {
+    margin: 0 20px 164px;
+    opacity: 0.9;
+    background: #FFF;
+    color: #1F1F1F;
+    border: none;
+  }
+}

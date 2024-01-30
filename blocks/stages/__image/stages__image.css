@@ -1,0 +1,9 @@
+.stages__image {
+  position: absolute;
+  top: 170px;
+  right: -60px;
+}
+
+.stages__image-small {
+  position: absolute;
+}

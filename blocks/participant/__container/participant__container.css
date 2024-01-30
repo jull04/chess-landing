@@ -1,0 +1,6 @@
+.participant__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 60px;
+  position: relative;
+}

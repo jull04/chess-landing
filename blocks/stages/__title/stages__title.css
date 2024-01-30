@@ -1,0 +1,19 @@
+.stages__title {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Merriweather;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 806px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .stages__title {
+    font-size: 36px;
+    line-height: 39.6px;
+    width: 335px;
+  }
+}

@@ -1,0 +1,22 @@
+.stages__subtitle {
+  color: #3057A2;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  width: 280px;
+  position: absolute;
+  top: 72px;
+  left: 301px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .stages__subtitle {
+    font-size: 18px;
+    top: 132px;
+    left: 0;
+  }
+}

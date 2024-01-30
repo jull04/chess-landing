@@ -1,0 +1,13 @@
+.stages__container-small {
+  position: relative;
+  display: none;
+  width: 335px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .stages__container-small {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+}

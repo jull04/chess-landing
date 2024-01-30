@@ -1,0 +1,16 @@
+.header {
+  width: 1366px;
+  height: 680px;
+  background-image: url(../../images/background.png);
+  padding-top: 20px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .header {
+    background-image: url(../../images/background-mini.png);
+    background-repeat: no-repeat;
+    height: 764px;
+    width: 375px;
+  }
+}
+

@@ -1,0 +1,11 @@
+.stages__container {
+  display: flex;
+  position: relative;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .stages__container {
+    flex-direction: column;
+    margin-bottom: 76px;
+  }
+}
