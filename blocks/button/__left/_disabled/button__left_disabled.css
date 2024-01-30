@@ -1,0 +1,4 @@
+.button__left_disabled {
+  background-image: url(../../../../images/button-disabled.svg);
+  transform: rotate(180deg);
+}

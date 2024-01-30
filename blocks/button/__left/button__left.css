@@ -1,0 +1,20 @@
+.button__left {
+  all: initial;
+  background-image: url(../../../images/button-left.svg);
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.button__left:hover {
+  background-image: url(../../../images/button-hover.svg);
+  transform: rotate(180deg);
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .button__left {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+  }
+}

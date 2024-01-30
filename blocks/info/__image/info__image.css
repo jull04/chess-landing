@@ -1,0 +1,9 @@
+.info__image {
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .info__image {
+    width: 332px;
+    height: 385px;
+  }
+}

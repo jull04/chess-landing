@@ -1,0 +1,11 @@
+.ticker__title {
+  margin: 18px auto;
+  display: flex;
+  align-items: center;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .ticker__title {
+    margin: 10px auto;
+  }
+}

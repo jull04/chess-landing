@@ -1,0 +1,15 @@
+.stages__small {
+  width: 335px;
+  height: 300px;
+  background-color: #E6DBCF;
+  padding: 62px 20px 34px;
+  box-sizing: border-box;
+  margin: 128px 0 164px;
+  gap: 28px;
+}
+
+.stages__small-text {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}

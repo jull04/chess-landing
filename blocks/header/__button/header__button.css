@@ -1,0 +1,35 @@
+.header__button {
+  all: initial;
+  border-radius: 66px;
+  background: #1F1F1F;
+  color: #FFFFFF;
+  width: 263px;
+  height: 72px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 72px;
+}
+
+.header__button:hover {
+  background: #FBCE51;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header__button {
+    width: 335px;
+    height: 47px;
+    font-size: 16px;
+    margin: 0 20px;
+  }
+}
+
+.header__button-container {
+  display: flex;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header__button-container {
+    flex-direction: column;
+    gap: 14px;
+  }
+}

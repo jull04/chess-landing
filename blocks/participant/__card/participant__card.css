@@ -1,0 +1,12 @@
+.participant__card {
+  width: 394px;
+  height: 462px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .participant__card {
+    width: 335px;
+  }
+}

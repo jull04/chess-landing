@@ -1,0 +1,14 @@
+.ticker {
+  background-color: #F54932;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .ticker {
+    height: 38px;
+    width: 375px;
+    margin: 0;
+  }
+}

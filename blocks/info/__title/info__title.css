@@ -1,0 +1,21 @@
+.info__title {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Merriweather;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48.6px;
+  text-transform: uppercase;
+  width: 764px;
+  margin: 50px 0 60px 0;
+  width: 704px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .info__title {
+    font-size: 28px;
+    line-height: 37.8px;
+    margin: 19px 0 28px 0;
+    width: 335px;
+  }
+}

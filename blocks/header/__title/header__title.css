@@ -1,0 +1,21 @@
+.header__title {
+  font-family: Merriweather;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66px;
+  text-transform: uppercase;
+  width: 542px;
+  height: 264px;
+  margin: 0 0 24px 72px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .header__title {
+    font-size: 36px;
+    width: 335px;
+    height: 160px;
+    line-height: 39px;
+    margin: 40px 20px 24px;
+  }
+}

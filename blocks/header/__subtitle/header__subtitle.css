@@ -1,0 +1,21 @@
+.header__subtitle {
+  font-family: "Golos Text";
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  width: 492px;
+  height: 46px;
+  margin: 0 50px 40px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .header__subtitle{
+    font-size: 18px;
+    width: 335px;
+    height: 69px;
+    line-height: 23px;
+    margin: 0 20px 32px;
+  }
+}

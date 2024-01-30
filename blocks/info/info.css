@@ -1,0 +1,13 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  margin: 0 72px 0 50px;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .info {
+    margin: 21px 20px 120px;
+    flex-direction: column;
+  }
+}

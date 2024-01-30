@@ -1,0 +1,14 @@
+.intro__image {
+  width: 394px;
+  height: 250px;
+  order: 2;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .intro__image   {
+    width: 335px;
+    height: 212.563px;
+    order: 0;
+    margin: 30px 0;
+  }
+}
