@@ -7,7 +7,7 @@
 @media  (min-width: 375px) and (max-width: 767px) {
   .button__container {
     position: absolute;
-    top: 558px;
+    top: 578px;
     left: 103px;
   }
 }
@@ -15,8 +15,8 @@
 .button__container-small {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin: 28px 103px 0;
+  gap: 16px;
+  margin: 28px 60px 0;
   position: absolute;
   top: 426px
 }

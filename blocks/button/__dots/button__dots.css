@@ -1,0 +1,17 @@
+.button__dots {
+  display: flex;
+  justify-content: center;
+}
+
+.button__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.button__dot_active {
+  background-color: #313131;
+}
