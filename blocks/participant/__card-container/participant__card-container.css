@@ -1,8 +1,8 @@
 .participant__card-container {
   display: flex;
   gap: 94px;
-  overflow: hidden;
   margin: 0 37px;
+  transition: transform 1s ease;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {

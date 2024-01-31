@@ -1,7 +1,7 @@
 # chess-landing
 тестовое задание по верстке
 
- https://jull04.github.io/russian-travel/
+https://jull04.github.io/russian-travel/
 
 
 ## Используемые технологии

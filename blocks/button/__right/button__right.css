@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-.button__right:hover {
+.button__right:not(.button__right_disabled):hover {
   background-image: url(../../../images/button-hover.svg);
 }
 

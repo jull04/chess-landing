@@ -15,8 +15,8 @@
         <h1 class="header__title">превратите уездный город &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;в столицу &nbsp;земного шара</h1>
         <p class="header__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
         <div class="header__button-container">
-          <button class="header__button">Поддержать шахматную мысль</button>
-          <button class="header__button header__button-white">Подробнее о турнире</button>
+          <button class="header__button" id="supportButton">Поддержать шахматную мысль</button>
+          <button class="header__button header__button-white" id="aboutButton">Подробнее о турнире</button>
         </div>
       </header>
       <div class="ticker">
@@ -31,7 +31,7 @@
         </div>
       </div>
       <main class="content">
-        <section class="intro">
+        <section class="intro" id="introSection">
             <h1 class="intro__title">Чтобы поддержать<br> Международный васюкинский<br> турнир, посетите лекцию на тему:<br>  <span class="intro__colored-text">«Плодотворная дебютная идея»</span></h1>
             <img class="intro__image" src="./images/intro-image.png" alt="#">
         </section>
@@ -40,7 +40,7 @@
           <img class="intro__image" src="./images/intro-image.png" alt="#">
           <h1 class="intro__title">посетите лекцию на тему:<br>  <span class="intro__colored-text">«Плодотворная дебютная идея»</span></h1>
       </section>
-        <section class="info">
+        <section class="info" id="infoSection">
           <img class="info__image" src="./images/1.png" alt="#">
           <div class="info__text-container">
             <h2 class="info__title">и cеанс  <span class="intro__colored-text">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h2>
@@ -146,9 +146,9 @@
           <div class="participant__container">
             <h1 class="stages__title">Участники турнира</h1>
             <div class="button__container">
-              <button class="button__left"></button>
+              <button class="button__left" id="prevButton"></button>
                 <p class="button__number">3 / 6</p>
-              <button class="button__right"></button>
+              <button class="button__right" id="nextButton"></button>
             </div>
           </div>
           <div class="participant__card-container">
@@ -205,6 +205,7 @@
       <footer class="footer">
         <p class="footer__title">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
       </footer>
+      <script src="./scripts/index.js"></script>
   </body>
 </html>
 

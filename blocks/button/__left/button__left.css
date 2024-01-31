@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-.button__left:hover {
+.button__left:not(.button__left_disabled):hover {
   background-image: url(../../../images/button-hover.svg);
   transform: rotate(180deg);
 }

@@ -9,13 +9,13 @@
   line-height: 24.2px;
   text-transform: uppercase;
   text-align: center;
-  animation: ticker 10s linear infinite;
+  animation: ticker 15s linear infinite;
   white-space: nowrap;
 }
 
 @keyframes ticker {
   from {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   to {
     transform: translateX(-100%);
