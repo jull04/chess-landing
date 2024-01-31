@@ -6,4 +6,5 @@
 
 .stages__image-small {
   position: absolute;
+  z-index: 1;
 }

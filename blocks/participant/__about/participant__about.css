@@ -20,3 +20,9 @@
   background: #3057A2;
   color: #FFFFFF;
 }
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .participant__about {
+    margin-bottom: 76px;
+  }
+}

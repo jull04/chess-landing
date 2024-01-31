@@ -107,6 +107,7 @@
           </div>
             <div class="stages__container-small">
             <img class="stages__image-small" src="./images/plane-small.png" alt="самолет">
+          <div class="container">
             <div class="stages__small">
               <div class="stages__small-text">
                 <div class="stages__grid-number">1</div>
@@ -116,29 +117,46 @@
                 <div class="stages__grid-number">2</div>
                 <p class="stages__grid-text">Открытие фешенебельной<br> гостиницы «Проходная<br> пешка» и других небоскрёбов</p>
               </div>
+            </div>
+            <div class="stages__small">
+              <div class="stages__small-text">
+                <div class="stages__grid-number">3</div>
+                <p class="stages__grid-text">Поднятие сельского<br> хозяйства в радиусе<br> на тысячу километров:<br> производство овощей,<br> фруктов, икры, шоколадных<br> конфет</p>
               </div>
-            <!-- <div class="stages__small">
-              <div class="stages__grid-number">3</div>
-              <p class="stages__grid-text">Поднятие сельского<br> хозяйства в радиусе<br> на тысячу километров:<br> производство овощей,<br> фруктов, икры, шоколадных<br> конфет</p>
             </div>
             <div class="stages__small">
-              <div class="stages__grid-number">4</div>
-              <p class="stages__grid-text">Строительство дворца<br> для турнира</p>
-              <div class="stages__grid-number">5</div>
-              <p class="stages__grid-text">Размещение гаражей<br> для гостевого<br> автотранспорта</p>
+              <div class="stages__small-text">
+                <div class="stages__grid-number">4</div>
+                <p class="stages__grid-text">Строительство дворца<br> для турнира</p>
+              </div>
+              <div class="stages__small-text">
+                <div class="stages__grid-number">5</div>
+                <p class="stages__grid-text">Размещение гаражей<br> для гостевого<br> автотранспорта</p>
+              </div>
             </div>
             <div class="stages__small">
-              <div class="stages__grid-number">6</div>
-              <p class="stages__grid-text">Постройка сверхмощной<br> радиостанции для передачи<br> всему миру сенсационных<br> результатов</p>
+              <div class="stages__small-text">
+                <div class="stages__grid-number">6</div>
+                <p class="stages__grid-text">Постройка сверхмощной<br> радиостанции для передачи<br> всему миру сенсационных<br> результатов</p>
+              </div>
             </div>
               <div class="stages__small">
-              <div class="stages__grid-number">7</div>
-              <p class="stages__grid-text">Создание аэропорта «Большие Васюки»<br> с регулярным отправлением почтовых<br> самолётов и дирижаблей во все концы<br> света, включая Лос-Анжелос и Мельбурн</p>
-            </div> -->
+                <div class="stages__small-text">
+                  <div class="stages__grid-number">7</div>
+                  <p class="stages__grid-text">Создание аэропорта «Большие Васюки»<br> с регулярным отправлением почтовых<br> самолётов и дирижаблей во все концы<br> света, включая Лос-Анжелос и Мельбурн</p>
+              </div>
+            </div>
+          </div>
           <div class="button__container-small">
-            <button class="button__left"></button>
-              <p class="button__number">1 / 5</p>
-            <button class="button__right"></button>
+            <button class="button__left" id="prevButton"></button>
+              <div class="button__dots">
+                <span class="button__dot button__dot_active"></span>
+                <span class="button__dot"></span>
+                <span class="button__dot"></span>
+                <span class="button__dot"></span>
+                <span class="button__dot"></span>
+              </div>
+            <button class="button__right" id="nextButton"></button>
           </div>
           </div>
         </section>
@@ -146,9 +164,9 @@
           <div class="participant__container">
             <h1 class="stages__title">Участники турнира</h1>
             <div class="button__container">
-              <button class="button__left" id="prevButton"></button>
+              <button class="button__left"></button>
                 <p class="button__number">3 / 6</p>
-              <button class="button__right" id="nextButton"></button>
+              <button class="button__right"></button>
             </div>
           </div>
           <div class="participant__card-container">

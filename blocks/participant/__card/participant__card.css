@@ -1,6 +1,5 @@
 .participant__card {
   width: 394px;
-  height: 462px;
   display: flex;
   flex-direction: column;
 }

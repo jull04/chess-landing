@@ -61,3 +61,4 @@
 @import url(../blocks/button/__number/button__number.css);
 @import url(../blocks/button/__left/_disabled/button__left_disabled.css);
 @import url(../blocks/button/__right/_disabled/button__right_disabled.css);
+@import url(../blocks/button/__dots/button__dots.css)
