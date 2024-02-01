@@ -10,7 +10,7 @@
   .header {
     background-image: url(../../images/background-mini.png);
     background-repeat: no-repeat;
-    height: 764px;
+    height: 754px;
     width: 375px;
   }
 }
@@ -20,6 +20,14 @@
   top: 560px;
   right: 50px;
   animation: jump 0.5s infinite alternate;
+}
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .header__chess {
+    top: 700px;
+    right: 20px;
+    width: 50px;
+  }
 }
 
 @keyframes jump {
