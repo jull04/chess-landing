@@ -68,3 +68,4 @@ document.getElementById('supportButton').addEventListener('click', function() {
 document.getElementById('aboutButton').addEventListener('click', function() {
   document.getElementById('infoSection').scrollIntoView({ behavior: 'smooth' });
 });
+

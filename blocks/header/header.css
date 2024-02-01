@@ -3,6 +3,7 @@
   height: 680px;
   background-image: url(../../images/background.png);
   padding-top: 20px;
+  position: relative;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
@@ -14,3 +15,18 @@
   }
 }
 
+.header__chess {
+  position: absolute;
+  top: 560px;
+  right: 50px;
+  animation: jump 0.5s infinite alternate;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0); /* начальное и конечное положение - неизменное */
+  }
+  50% {
+    transform: translateY(-50px); /* положение в середине анимации - поднятое */
+  }
+}
