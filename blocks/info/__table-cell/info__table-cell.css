@@ -31,3 +31,11 @@
     padding: 16px 0 12px;
   }
 }
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .info__table-cell-one {
+    width: 140px;
+    border-bottom: 1px solid #D0D0D0;
+  }
+}
+

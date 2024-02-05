@@ -2,9 +2,20 @@
   position: absolute;
   top: 170px;
   right: -60px;
+  animation: rotate 1s linear infinite alternate;
 }
 
 .stages__image-small {
   position: absolute;
   z-index: 1;
+  animation: rotate 1.5s linear infinite alternate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
 }

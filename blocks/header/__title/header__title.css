@@ -7,7 +7,7 @@
   text-transform: uppercase;
   width: 542px;
   height: 264px;
-  margin: 0 0 24px 72px;
+  margin: 0 0 24px 0;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
@@ -16,6 +16,6 @@
     width: 335px;
     height: 160px;
     line-height: 39px;
-    margin: 40px 20px 24px;
+    margin: 40px 20px 24px 0;
   }
 }

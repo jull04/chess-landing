@@ -1,8 +1,9 @@
 .intro {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 76px 72px 13px;
+  gap: 64px;
+  margin: 76px auto 13px;
+  width: 1222px;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {

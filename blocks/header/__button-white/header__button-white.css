@@ -12,7 +12,7 @@
 
 @media (min-width: 375px) and (max-width: 767px) {
   .header__button-white {
-    margin: 0 20px 164px;
+    margin: 0 20px 164px 0;
     opacity: 0.9;
     background: #FFF;
     color: #1F1F1F;

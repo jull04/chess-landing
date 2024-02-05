@@ -1,9 +1,19 @@
 .header {
-  width: 1366px;
-  height: 680px;
-  background-image: url(../../images/background.png);
+  height: 720px;
+  /* background-image: url(../../images/background.png); */
   padding-top: 20px;
   position: relative;
+}
+
+@media  (min-width: 768px) and (max-width: 1919px) {
+  .header {
+    background-image: url(../../images/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 680px;
+    margin: 0 auto;
+    width: 1366px;
+  }
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
@@ -12,21 +22,27 @@
     background-repeat: no-repeat;
     height: 754px;
     width: 375px;
+    padding-top: 20px;
   }
 }
 
 .header__chess {
   position: absolute;
-  top: 560px;
-  right: 50px;
+  top: 600px;
+  right: 330px;
   animation: jump 0.5s infinite alternate;
 }
 
-@media  (min-width: 375px) and (max-width: 767px) {
+@media  (min-width: 768px) and (max-width: 1919px) {
   .header__chess {
-    top: 700px;
-    right: 20px;
-    width: 50px;
+    top: 560px;
+    right: 130px;
+  }
+}
+
+@media  (min-width: 375px) and (max-width: 768px) {
+  .header__chess {
+    display: none;
   }
 }
 
@@ -36,5 +52,88 @@
   }
   50% {
     transform: translateY(-50px); /* положение в середине анимации - поднятое */
+  }
+}
+
+.image1 {
+  z-index: -3;
+  width: 1920px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 780px;
+}
+
+.image2 {
+  z-index: -1;
+  position: absolute;
+  top: 280px;
+  left: 158px;
+}
+
+.image3 {
+  z-index: -2;
+  position: absolute;
+  top: 290px;
+  left: 158px;
+}
+
+.image4 {
+  z-index: -3;
+  position: absolute;
+  top: 0px;
+  left: 951px;
+  opacity: 0.85;
+}
+
+.image5 {
+  z-index: -3;
+  position: absolute;
+  top: 0px;
+  left: 893px;
+  mix-blend-mode: overlay;
+}
+
+.image6 {
+  z-index: -3;
+  position: absolute;
+  top: 290px;
+  left: 1000px;
+  animation: jump 0.5s infinite alternate;
+}
+
+.image7 {
+  z-index: -3;
+  position: absolute;
+  top: 170px;
+  left: 1350px;
+  animation: jump 0.5s infinite alternate;
+}
+
+.image8 {
+  z-index: -2;
+  position: absolute;
+  top: 503px;
+  left: 1108px;
+  animation: rotate 0.8s linear infinite alternate;
+  transform-origin: bottom;
+}
+
+.container {
+  position: relative;
+}
+
+@media  (min-width: 375px) and (max-width: 1919px) {
+  .container {
+    display: none;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(40deg);
   }
 }

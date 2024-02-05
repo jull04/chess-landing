@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: row;
   gap: 17px;
-  margin: 0 72px 0 50px;
+  margin: 0 auto 50px;
+  width: 1222px;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
   .info {
     margin: 21px 20px 120px;
     flex-direction: column;
+    width: 335px;
   }
 }

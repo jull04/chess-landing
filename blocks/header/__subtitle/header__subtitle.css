@@ -7,7 +7,7 @@
   line-height: 23.4px;
   width: 492px;
   height: 46px;
-  margin: 0 50px 40px;
+  margin: 0 50px 40px 0;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
@@ -16,6 +16,6 @@
     width: 335px;
     height: 69px;
     line-height: 23px;
-    margin: 0 20px 32px;
+    margin: 0 20px 32px 0 ;
   }
 }

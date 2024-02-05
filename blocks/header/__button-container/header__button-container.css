@@ -1,0 +1,10 @@
+.header__button-container {
+  display: flex;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header__button-container {
+    flex-direction: column;
+    gap: 14px;
+  }
+}

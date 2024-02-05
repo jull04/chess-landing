@@ -1,10 +1,12 @@
 .stages {
-  margin: 170px 72px 200px;
+  margin: 170px auto 200px;
+  width: 1222px;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
   .stages {
     margin: 0 20px 20px;
     overflow: hidden;
+    width: 335px;
   }
 }

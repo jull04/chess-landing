@@ -69,3 +69,18 @@ document.getElementById('aboutButton').addEventListener('click', function() {
   document.getElementById('infoSection').scrollIntoView({ behavior: 'smooth' });
 });
 
+
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  // Получаем ссылки на ячейки с нужными классами
+  const cell1 = document.querySelector('.info__table-cell-one');
+  const cell2 = document.querySelector('.info__table-cell-two');
+
+  // Получаем текстовое содержимое ячеек
+  const text1 = cell1.innerText;
+  const text2 = cell2.innerText;
+
+  // Меняем текстовое содержимое ячеек местами
+  cell1.innerText = text2;
+  cell2.innerText = text1;
+}

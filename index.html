@@ -11,13 +11,25 @@
   </head>
   <body class="page">
       <header class="header">
-        <img class="header__chess" src="./images/chess.png">
+        <div class="container">
+          <img src="./images/backgorund1920.png" class="image1">
+          <img src="./images/path.png" class="image2">
+          <img src="./images/city.png" class="image3">
+          <img src="./images/Ellipse 6.png" class="image4">
+          <img src="./images/EllipseText.png" class="image5">
+          <img src="./images/chess1.png" class="image6">
+          <img src="./images/chess2.png" class="image7">
+          <img src="./images/horse.png" class="image8">
+        </div>
+        <img src="./images/chess.png" class="header__chess">
         <div class="header__logo"></div>
-        <h1 class="header__title">превратите уездный город &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;в столицу &nbsp;земного шара</h1>
-        <p class="header__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
-        <div class="header__button-container">
-          <button class="header__button" id="supportButton">Поддержать шахматную мысль</button>
-          <button class="header__button header__button-white" id="aboutButton">Подробнее о турнире</button>
+        <div class="header__content">
+          <h1 class="header__title">превратите уездный город &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;в столицу &nbsp;земного шара</h1>
+          <p class="header__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+          <div class="header__button-container">
+            <button class="header__button" id="supportButton">Поддержать шахматную мысль</button>
+            <button class="header__button header__button-white" id="aboutButton">Подробнее о турнире</button>
+          </div>
         </div>
       </header>
       <div class="ticker">
@@ -34,15 +46,15 @@
       <main class="content">
         <section class="intro" id="introSection">
             <h1 class="intro__title">Чтобы поддержать<br> Международный васюкинский<br> турнир, посетите лекцию на тему:<br>  <span class="intro__colored-text">«Плодотворная дебютная идея»</span></h1>
-            <img class="intro__image" src="./images/intro-image.png" alt="#">
+            <img class="intro__image" src="./images/intro-image.png" alt="шахматисты">
         </section>
-        <section class="intro-small">
+        <section class="intro-small" id="introSection">
           <h1 class="intro__title">Чтобы поддержать<br> Международный васюкинский<br> турнир</h1>
-          <img class="intro__image" src="./images/intro-image.png" alt="#">
+          <img class="intro__image" src="./images/intro-image.png" alt="шахматисты">
           <h1 class="intro__title">посетите лекцию на тему:<br>  <span class="intro__colored-text">«Плодотворная дебютная идея»</span></h1>
-      </section>
+        </section>
         <section class="info" id="infoSection">
-          <img class="info__image" src="./images/1.png" alt="#">
+          <img class="info__image" src="./images/info-image.png" alt="шахматист">
           <div class="info__text-container">
             <h2 class="info__title">и cеанс  <span class="intro__colored-text">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h2>
             <table class="info__table">
@@ -54,12 +66,12 @@
                 <td class="info__table-cell">Дата и время мероприятия:</td>
                 <td class="info__table-cell-bold">22 июня 1927 г. в 18:00</td>
               </tr>
-              <tr>
-                <td class="info__table-cell">Стоимость входных билетов:</td>
-                <td class="info__table-cell-bold">20 коп.</td>
+              <tr class="info__table-row">
+                <td class="info__table-cell info__table-cell-one">Стоимость входных билетов:</td>
+                <td class="info__table-cell-bold info__table-cell-three">20 коп.</td>
               </tr>
               <tr>
-                <td class="info__table-cell">Плата за игру:</td>
+                <td class="info__table-cell info__table-cell-two">Плата за игру:</td>
                 <td class="info__table-cell-bold">50 коп.</td>
               </tr>
               <tr>
@@ -106,9 +118,9 @@
             </div>
             <img class="stages__image" src="./images/plane.png" alt="самолет">
           </div>
-            <div class="stages__container-small">
+          <div class="stages__container-small">
             <img class="stages__image-small" src="./images/plane-small.png" alt="самолет">
-          <div class="container">
+            <div class="container-st">
             <div class="stages__small">
               <div class="stages__small-text">
                 <div class="stages__grid-number">1</div>
@@ -147,8 +159,8 @@
                   <p class="stages__grid-text">Создание аэропорта «Большие Васюки»<br> с регулярным отправлением почтовых<br> самолётов и дирижаблей во все концы<br> света, включая Лос-Анжелос и Мельбурн</p>
               </div>
             </div>
-          </div>
-          <div class="button__container-small">
+            </div>
+            <div class="button__container-small">
             <button class="button__left" id="prevButton"></button>
               <div class="button__dots">
                 <span class="button__dot button__dot_active"></span>
@@ -158,7 +170,7 @@
                 <span class="button__dot"></span>
               </div>
             <button class="button__right" id="nextButton"></button>
-          </div>
+            </div>
           </div>
         </section>
         <section class="participant">
@@ -172,37 +184,37 @@
           </div>
           <div class="participant__card-container">
             <div class="participant__card">
-            <img class="participant__image" src="./images/avatar.png" alt="">
-            <h3 class="participant__name">Хозе-Рауль Капабланка</h3>
-            <p class="participant__description">Чемпион мира по шахматам</p>
-            <button class="participant__about">Подробнее</button>
+              <img class="participant__image" src="./images/avatar.png" alt="аватар">
+              <h3 class="participant__name">Хозе-Рауль Капабланка</h3>
+              <p class="participant__description">Чемпион мира по шахматам</p>
+              <button class="participant__about">Подробнее</button>
             </div>
             <div class="participant__card">
-              <img class="participant__image" src="./images/avatar.png" alt="">
+              <img class="participant__image" src="./images/avatar.png" alt="аватар">
               <h3 class="participant__name">Эммануил Ласкер</h3>
               <p class="participant__description">Чемпион мира по шахматам</p>
               <button class="participant__about">Подробнее</button>
             </div>
             <div class="participant__card">
-              <img class="participant__image" src="./images/avatar.png" alt="">
+              <img class="participant__image" src="./images/avatar.png" alt="аватар">
               <h3 class="participant__name">Александр Алехин</h3>
               <p class="participant__description">Чемпион мира по шахматам</p>
               <button class="participant__about">Подробнее</button>
             </div>
             <div class="participant__card">
-              <img class="participant__image" src="./images/avatar.png" alt="">
+              <img class="participant__image" src="./images/avatar.png" alt="аватар">
               <h3 class="participant__name">Арон Нимцович</h3>
               <p class="participant__description">Чемпион мира по шахматам</p>
               <button class="participant__about">Подробнее</button>
             </div>
             <div class="participant__card">
-              <img class="participant__image" src="./images/avatar.png" alt="">
+              <img class="participant__image" src="./images/avatar.png" alt="аватар">
               <h3 class="participant__name">Рихард Рети</h3>
               <p class="participant__description">Чемпион мира по шахматам</p>
               <button class="participant__about">Подробнее</button>
             </div>
             <div class="participant__card">
-              <img class="participant__image" src="./images/avatar.png" alt="">
+              <img class="participant__image" src="./images/avatar.png" alt="аватар">
               <h3 class="participant__name">Остап Бендер</h3>
               <p class="participant__description">Чемпион мира по шахматам</p>
               <button class="participant__about">Подробнее</button>

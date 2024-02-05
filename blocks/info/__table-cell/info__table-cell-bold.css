@@ -35,3 +35,10 @@
     border-bottom: 1px solid #D0D0D0;
   }
 }
+
+@media  (min-width: 375px) and (max-width: 767px) {
+  .info__table-cell-three {
+    width: 150px;
+    padding: 16px 0 12px;
+  }
+}
