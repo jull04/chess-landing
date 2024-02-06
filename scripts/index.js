@@ -84,3 +84,71 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   cell1.innerText = text2;
   cell2.innerText = text1;
 }
+
+let currentCard = document.documentElement.clientWidth < 768 ? 1 : 3;  // Начальное значение счетчика
+const totalCards = 6; // Общее количество карточек
+const initialVisibleCards = document.documentElement.clientWidth < 768 ? 1 : 3;// Количество изначально видимых карточек
+console.log("initialVisibleCards:", initialVisibleCards);
+const cardContainer = document.querySelector('.participant__card-container');
+const cardCounter = document.getElementById('cardCounter');
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  currentCard = 1; // Начинаем с первой карточки
+  updateCardDisplay(); // Вызываем функцию для отображения карточек при загрузке страницы
+});
+
+function prevCard() {
+  if (currentCard > 1) {
+    currentCard--;
+    updateCardDisplay();
+  }
+}
+
+function nextCard() {
+  if (currentCard < totalCards - initialVisibleCards + 1) {
+    currentCard++;
+    updateCardDisplay();
+  }
+}
+
+function updateCardDisplay() {
+  // Обновляем счетчик карточек
+  cardCounter.textContent = (currentCard + initialVisibleCards - 1) + ' / ' + totalCards;
+
+  // Скрываем все карточки
+  const cards = cardContainer.querySelectorAll('.participant__card');
+  cards.forEach(card => card.style.display = 'none');
+
+  // Показываем текущие видимые карточки
+  for (let i = currentCard; i < currentCard + initialVisibleCards; i++) {
+    const currentVisibleCard = cardContainer.querySelector(`.participant__card:nth-child(${i})`);
+    if (currentVisibleCard) {
+      currentVisibleCard.style.display = 'flex'; // Показываем видимые карточки
+    }
+  }
+
+  // Делаем кнопки неактивными, если достигнут край
+  const buttonLeft = document.querySelector('.button__left');
+  const buttonRight = document.querySelector('.button__right');
+
+  buttonLeft.disabled = currentCard === 1;
+  buttonRight.disabled = currentCard === totalCards - initialVisibleCards + 1;
+}
+
+let intervalId;
+
+function startAutoScroll() {
+  intervalId = setInterval(() => {
+    if (currentCard === totalCards - initialVisibleCards + 1) {
+      direction = -1; // Если достигнут конец, меняем направление на назад
+    } else if (currentCard === 1) {
+      direction = 1; // Если достигнуто начало, меняем направление на вперед
+    }
+    currentCard += direction;
+    updateCardDisplay();
+  }, 4000);
+}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  startAutoScroll();
+});

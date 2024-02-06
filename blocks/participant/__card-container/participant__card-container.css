@@ -2,7 +2,7 @@
   display: flex;
   gap: 94px;
   margin: 0 37px;
-  transition: transform 1s ease;
+  transition: display 0.3s ease-in-out;
   width: 1222px;
 }
 

@@ -2,10 +2,13 @@
   width: 320px;
   display: flex;
   flex-direction: column;
+  transition: display 0.3s ease-in-out;
+  display: none;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
   .participant__card {
     width: 335px;
+    height: 500px;
   }
 }
