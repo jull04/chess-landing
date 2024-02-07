@@ -2,12 +2,12 @@
   display: flex;
   gap: 94px;
   margin: 0 37px;
-  transition: display 0.3s ease-in-out;
   width: 1222px;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
   .participant__card-container {
     width: 335px;
+    margin: 0;
   }
 }
