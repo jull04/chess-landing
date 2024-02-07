@@ -9,7 +9,7 @@
 @media  (min-width: 375px) and (max-width: 767px) {
   .ticker {
     height: 38px;
-    width: 375px;
+    width: 100vw;
     margin: 0;
   }
 }

@@ -103,7 +103,7 @@ function nextCard() {
   if (currentCard < totalCards - initialVisibleCards + 1) {
     currentCard++;
     updateCardDisplay();
-  } else if (window.innerWidth < 768 && currentCard === totalCards - initialVisibleCards + 1) {
+  } else if (document.documentElement.clientWidth < 768 && currentCard === totalCards - initialVisibleCards + 1) {
     currentCard = 1;
     updateCardDisplay();
   }
@@ -133,20 +133,20 @@ function updateCardDisplay() {
   buttonRight.disabled = currentCard === totalCards - initialVisibleCards + 1;
 }
 
-// let intervalId;
+let intervalId;
 
-// function startAutoScroll() {
-//   intervalId = setInterval(() => {
-//     if (currentCard === totalCards - initialVisibleCards + 1) {
-//       direction = -1; // Если достигнут конец, меняем направление на назад
-//     } else if (currentCard === 1) {
-//       direction = 1; // Если достигнуто начало, меняем направление на вперед
-//     }
-//     currentCard += direction;
-//     updateCardDisplay();
-//   }, 4000);
-// }
+function startAutoScroll() {
+  intervalId = setInterval(() => {
+    if (currentCard === totalCards - initialVisibleCards + 1) {
+      direction = -1; // Если достигнут конец, меняем направление на назад
+    } else if (currentCard === 1) {
+      direction = 1; // Если достигнуто начало, меняем направление на вперед
+    }
+    currentCard += direction;
+    updateCardDisplay();
+  }, 4000);
+}
 
-// window.addEventListener('DOMContentLoaded', (event) => {
-//   startAutoScroll();
-// });
+window.addEventListener('DOMContentLoaded', (event) => {
+  startAutoScroll();
+});
