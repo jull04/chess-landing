@@ -1,6 +1,6 @@
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
-const cards = document.querySelector('.container');
+const cards = document.querySelector('.container-st');
 const dots = document.querySelectorAll('.button__dot');
 
 let currentIndex = 0;
@@ -49,8 +49,6 @@ function updateDots() {
   });
 }
 
-// setInterval(clickNext, 4000);
-
 function updateButtonsState() {
   nextButton.disabled = currentIndex >= cards.children.length - 1;
   prevButton.disabled = currentIndex <= 0;
@@ -60,7 +58,6 @@ function updateButtonsState() {
   prevButton.classList.toggle('button__left_disabled', prevButton.disabled);
 }
 
-
 document.getElementById('supportButton').addEventListener('click', function() {
   document.getElementById('introSection').scrollIntoView({ behavior: 'smooth' });
 });
@@ -68,8 +65,6 @@ document.getElementById('supportButton').addEventListener('click', function() {
 document.getElementById('aboutButton').addEventListener('click', function() {
   document.getElementById('infoSection').scrollIntoView({ behavior: 'smooth' });
 });
-
-
 
 if (window.matchMedia("(max-width: 768px)").matches) {
   // Получаем ссылки на ячейки с нужными классами
@@ -108,6 +103,9 @@ function nextCard() {
   if (currentCard < totalCards - initialVisibleCards + 1) {
     currentCard++;
     updateCardDisplay();
+  } else if (window.innerWidth < 768 && currentCard === totalCards - initialVisibleCards + 1) {
+    currentCard = 1;
+    updateCardDisplay();
   }
 }
 
@@ -128,27 +126,27 @@ function updateCardDisplay() {
   }
 
   // Делаем кнопки неактивными, если достигнут край
-  const buttonLeft = document.querySelector('.button__left');
-  const buttonRight = document.querySelector('.button__right');
+  const buttonLeft = document.getElementById('participantPrevButton');
+  const buttonRight = document.getElementById('participantNextButton');
 
   buttonLeft.disabled = currentCard === 1;
   buttonRight.disabled = currentCard === totalCards - initialVisibleCards + 1;
 }
 
-let intervalId;
+// let intervalId;
 
-function startAutoScroll() {
-  intervalId = setInterval(() => {
-    if (currentCard === totalCards - initialVisibleCards + 1) {
-      direction = -1; // Если достигнут конец, меняем направление на назад
-    } else if (currentCard === 1) {
-      direction = 1; // Если достигнуто начало, меняем направление на вперед
-    }
-    currentCard += direction;
-    updateCardDisplay();
-  }, 4000);
-}
+// function startAutoScroll() {
+//   intervalId = setInterval(() => {
+//     if (currentCard === totalCards - initialVisibleCards + 1) {
+//       direction = -1; // Если достигнут конец, меняем направление на назад
+//     } else if (currentCard === 1) {
+//       direction = 1; // Если достигнуто начало, меняем направление на вперед
+//     }
+//     currentCard += direction;
+//     updateCardDisplay();
+//   }, 4000);
+// }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  startAutoScroll();
-});
+// window.addEventListener('DOMContentLoaded', (event) => {
+//   startAutoScroll();
+// });
