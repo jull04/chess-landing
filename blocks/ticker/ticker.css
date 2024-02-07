@@ -3,6 +3,7 @@
   margin: 0 auto;
   height: 60px;
   display: flex;
+  overflow: hidden;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
