@@ -1,0 +1,78 @@
+@media  (min-width: 375px) and (max-width: 1919px) {
+  .header__container {
+    display: none;
+  }
+}
+
+.image1 {
+  z-index: -4;
+  width: 1920px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 780px;
+}
+
+.image2 {
+  z-index: -1;
+  position: absolute;
+  top: 280px;
+  left: 158px;
+}
+
+.image3 {
+  z-index: -2;
+  position: absolute;
+  top: 290px;
+  left: 158px;
+}
+
+.image4 {
+  z-index: -3;
+  position: absolute;
+  top: 0px;
+  left: 951px;
+  opacity: 0.85;
+}
+
+.image5 {
+  z-index: -3;
+  position: absolute;
+  top: 0px;
+  left: 893px;
+  mix-blend-mode: overlay;
+}
+
+.image6 {
+  z-index: -3;
+  position: absolute;
+  top: 290px;
+  left: 1000px;
+  animation: jump 0.5s infinite alternate;
+}
+
+.image7 {
+  z-index: -3;
+  position: absolute;
+  top: 170px;
+  left: 1350px;
+  animation: jump 0.5s infinite alternate;
+}
+
+.image8 {
+  z-index: -2;
+  position: absolute;
+  top: 503px;
+  left: 1108px;
+  animation: rotate 0.8s linear infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
+}

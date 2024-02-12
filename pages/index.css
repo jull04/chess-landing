@@ -10,6 +10,8 @@
 @import url(../blocks/header/__button-white/header__button-white.css);
 @import url(../blocks/header/__content/header__content.css);
 @import url(../blocks/header/__button-container/header__button-container.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__chess/header__chess.css);
 
 @import url(../blocks/ticker/ticker.css);
 @import url(../blocks/ticker/__image/ticker__image.css);
@@ -43,6 +45,7 @@
 @import url(../blocks/stages/stages.css);
 @import url(../blocks/stages/__container-small/stages__container-small.css);
 @import url(../blocks/stages/__small/stages__small.css);
+@import url(../blocks/stages/__wrapper/stages__wrapper.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__title/footer__title.css);
@@ -63,4 +66,6 @@
 @import url(../blocks/button/__number/button__number.css);
 @import url(../blocks/button/__left/_disabled/button__left_disabled.css);
 @import url(../blocks/button/__right/_disabled/button__right_disabled.css);
-@import url(../blocks/button/__dots/button__dots.css)
+@import url(../blocks/button/__dot-container/button__dot-container.css);
+@import url(../blocks/button/__dot/button__dot.css);
+@import url(../blocks/button/__dot/_active/button__dot_active.css);

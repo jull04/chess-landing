@@ -1,8 +1,7 @@
 .participant__about {
+  font-family: "Golos Text";
   all: unset;
   color: #3057A2;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: "Golos Text";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

@@ -1,11 +1,10 @@
 .stages__grid-element {
   background-color: #E6DBCF;
-  font-family: "Golos Text";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height:  24px;
-  padding: 20px;
+  padding: 19px;
   display: flex;
   gap: 20px;
 }

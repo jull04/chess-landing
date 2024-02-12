@@ -83,7 +83,6 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 let currentCard = document.documentElement.clientWidth < 768 ? 1 : 3;  // Начальное значение счетчика
 const totalCards = 6; // Общее количество карточек
 const initialVisibleCards = document.documentElement.clientWidth < 768 ? 1 : 3;// Количество изначально видимых карточек
-console.log("initialVisibleCards:", initialVisibleCards);
 const cardContainer = document.querySelector('.participant__card-container');
 const cardCounter = document.getElementById('cardCounter');
 
@@ -103,7 +102,7 @@ function nextCard() {
   if (currentCard < totalCards - initialVisibleCards + 1) {
     currentCard++;
     updateCardDisplay();
-  } else if (document.documentElement.clientWidth < 768 && currentCard === totalCards - initialVisibleCards + 1) {
+  } else if (window.innerWidth < 768 && currentCard === totalCards - initialVisibleCards + 1) {
     currentCard = 1;
     updateCardDisplay();
   }

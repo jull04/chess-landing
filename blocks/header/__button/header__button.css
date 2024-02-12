@@ -1,17 +1,17 @@
 .header__button {
-  all: initial;
+  font-family: "Golos Text";
   border-radius: 66px;
   background: #1F1F1F;
   color: #FFFFFF;
-  width: 140px;
+  width: 263px;
   text-align: center;
   cursor: pointer;
-  padding: 10px 50px;
-  font-family: "Golos Text";
+  padding: 15px 50px;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 20.8px;
+  border: none;
 }
 
 .header__button:hover {

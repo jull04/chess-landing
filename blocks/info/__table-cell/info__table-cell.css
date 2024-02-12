@@ -1,5 +1,4 @@
 .info__table-cell {
-  font-variant-numeric: lining-nums proportional-nums;
   font-family: "Golos Text";
   font-size: 20px;
   font-style: normal;
@@ -34,7 +33,7 @@
 
 @media  (min-width: 375px) and (max-width: 767px) {
   .info__table-cell-one {
-    width: 140px;
+    width: 152px;
     border-bottom: 1px solid #D0D0D0;
   }
 }
