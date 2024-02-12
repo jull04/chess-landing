@@ -1,4 +1,9 @@
 .stages__grid-text {
   margin: 0;
   font-family: "Golos Text";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21.6px;
+  width: 237px;
 }

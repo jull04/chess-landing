@@ -1,13 +1,13 @@
 .button__container {
   display: flex;
-  gap: 14px;
+  gap: 11px;
   align-items: center;
 }
 
 @media  (min-width: 375px) and (max-width: 767px) {
   .button__container {
     position: absolute;
-    top: 578px;
+    top: 543px;
     left: 103px;
   }
 }
