@@ -1,5 +1,5 @@
 # chess-landing
-тестовое задание по верстке
+Ссылка на сайт:
 
 https://jull04.github.io/chess-landing/
 
